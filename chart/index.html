@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passasjerer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="passasjerer" width="300" height="150"></canvas>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    
+    var data = {
+        labels: ['2019','2022'],
+        datasets: [{
+            label: 'Passasjerer i alt (1 000 passasjerer)',
+            backgroundColor: 'rgba(75,0.2)',
+            borderColor: 'rgba(75, 1)',
+            borderWidth: 1,
+            data: [434226,386951]
+        }]
+    };
+
+    
+    var options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+
+    
+    var ctx = document.getElementById('passasjerer').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
+});
+
+    </script>
+</body>
+</html>
