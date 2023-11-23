@@ -102,17 +102,6 @@ header p {
     float: left;
     line-height: 1.8;
 }
-.alignRight {
-    float: right;
-    margin: 0 0 1rem 1rem;
-}
-
-.small {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0 auto;
-    display: block;
-}
 
 footer {
     background: #000;
