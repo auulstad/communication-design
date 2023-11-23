@@ -5,203 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christina (22) dro på utveksling til Irland</title>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link href="story-exchange-student.css" rel="stylesheet" media="all">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style-exchange-student.css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        #map-container {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            max-width: 900px;
+            margin: 10px auto;
+        }
+    
+        #map { height: 400px; width: 400px; margin: 10px auto;}
+
+        article {
+            border: 1px solid #ccc;
+            background: #f3f3f3;
+            padding: .5rem;
+            margin-bottom: 5px;
+        }
+        h1 { text-align: center; }
+    </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Christina (22) dro på utveksling til Irland: </h1>
-            <p>- En fin by å studere i</p>
-        </div>
+    <div>
+        <h1>Christina (22) dro på utveksling til Irland: </h1>
+        <p>- En fin by å studere i</p>
+    </div>
     </header>
-    <section class="scrollContainer" id="introduction">
-        <div class="scrollText"><p>Christina Spydslaug (22) går nå på 3. året i internasjonal kommunikasjon i HIØF avd. Halden. </p></div>
-        <div class="scrollText"><p>Hun dro på utveksling for å studere i Irland som er en obligatorisk del av studiet i vårsemesteret 2023. </p></div>
-        <div class="scrollText"><p>Der var det en forskjell mellom universitetet i Dublin og Halden. </p></div>
-    </section>
-    <section class="textSection">
-        <p>I vårsemesteret 2023 er det en del studenter fra Høgskolen i Østfold som reiste til utlandet for å studere. Det er en obligatorisk del av bachelorstudiet som hun går på. Mens i andre studier er det ikke obligatorisk å dra på utveksling. Christina Spydslaug dro til Dublin som er hovedstaden i Irland for å studere i et semester. Årsaken til at hun dro til Irland var at det var det nærmeste og billigste land å bo i. Den 22 år gamle studenten sa at fordelen med å være en utvekslingsstudent i Dublin, var å oppleve en annen kultur. Mens ulempen med det var bostedet som studenten bodde i og hun måtte dele et kjøkken og bad med andre folk. </p>
-        <figure >
-            <img src="https://images.unsplash.com/photo-1550842605-92ad35330694?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Christina Spydslaug">
-            <figcaption>Christina Spydslaug (22) dro på utveksling til Irland. Foto: Privat</figcaption>
-        </figure>
-    </section>
-    <section id="changingBg" class="scrollContainer">
-        <div id="decline" class="scrollText">
-            <h3>Hva var forskjellen mellom skolen du studerte på og i Halden?</h3>
-        <!-- 
-            <aside class="alignRight">
-                <div class="circle redBg">
-                    <span class="big">-1239</span>
-                    <span class="small">Votes</span>
-                </div>
-            </aside>
-        -->
-            <p>Kommunikasjonsstudenten fortalte at det var et obligatorisk oppmøte og lite gruppeoppgaver i universitetet i Dublin som var annerledes enn i HIØF. Hun nevnte også at man ikke trengte bøker til noen av fagene hun tok. Det var valgfritt å låne bøker fra biblioteket. Hun fortalte at skolen hadde et bra skoleopplegg og beskrev Dublin som en fin by å studere i. </p>
+    <main>
+        <section class="scrollContainer" id="introduction">
+            <div class="scrollText"><p>Christina Spydslaug (22) går nå på 3. året i internasjonal kommunikasjon i HIØF avd. Halden. Hun dro på utveksling for å studere i Irland som er en obligatorisk del av studiet i vårsemesteret 2023. Der var det en forskjell mellom universitetet i Dublin og Halden. </p></div>
+        </section>
+        <section class="textSection">
+            <p>I vårsemesteret 2023 er det en del studenter fra Høgskolen i Østfold som reiste til utlandet for å studere. Det er en obligatorisk del av bachelorstudiet som hun går på. Mens i andre studier er det ikke obligatorisk å dra på utveksling. Christina Spydslaug dro til Dublin som er hovedstaden i Irland for å studere i et semester. Årsaken til at hun dro til Irland var at det var det nærmeste og billigste land å bo i. Den 22 år gamle studenten sa at fordelen med å være en utvekslingsstudent i Dublin, var å oppleve en annen kultur. Mens ulempen med det var bostedet som studenten bodde i og hun måtte dele et kjøkken og bad med andre folk. </p>
+            <figure >
+                <img src="https://placehold.co/1000x500" alt="">
+            </figure>
+        </section>
+        <section id="introduction" class="scrollContainer">
+            <div class="scrollText">
+                <h3>Hva var forskjellen mellom skolen du studerte på og i Halden?</h3>
+            </div>
+            <div class="scrollText">
+                <p>Kommunikasjonsstudenten fortalte at det var et obligatorisk oppmøte og lite gruppeoppgaver i universitetet i Dublin som var annerledes enn i HIØF. Hun nevnte også at man ikke trengte bøker til noen av fagene hun tok. Det var valgfritt å låne bøker fra biblioteket. Hun fortalte at skolen hadde et bra skoleopplegg og beskrev Dublin som en fin by å studere i. </p>
+            </div>
+        </section>
+        <h2>Se Christina sin reise til Edinburgh her...</h2>
+        <div id="map-container">
+            <nav id="businesses"></nav>
+            <div id="map"></div>
         </div>
-        <div id="increase" class="scrollText">
-            <h2>-	Utfordring</h2>
-        <!--
-                <aside class="alignRight">
-                <div class="circle greenBg">
-                    <span class="big">1290</span>
-                    <span class="small">Votes</span>
-                </div>
-            </aside>
-        -->
-            <p>Sisteårsstudenten forklarte at utfordringen som hun møtte, var å dele et kjøkken med 3 personer og hadde et komplisert forhold med en av hennes «flatmates» som vil si personer man deler en leilighet med. </p>
+        <section id="changingSecondBackground" class="scrollContainer">
+            <div class="scrollText">
+                <h3>-   Utfordring</h3>
+            </div>
+            <div class="scrollText">
+                <p>Sisteårsstudenten forklarte at utfordringen som hun møtte, var å dele et kjøkken med 3 personer og hadde et komplisert forhold med en av hennes «flatmates» som vil si personer man deler en leilighet med. </p>
+            </div>
+        </section>
+        <section id="changingThirdBackground" class="scrollContainer">
+            <div class="scrollText">
+                <h3>Hvilket råd ville du ha gitt til utvekslingsstudenter?</h3>
+            </div>
+            <div class=scrollText>
+                <p>-   Mitt råd er å være varsom på hvilken bosituasjon du velger, og ta med deg norsk mat og godteri du liker. Og ikke minst prøve å sosialisere dere med ikke-norske folk slik at du blir bedre i engelsk og får et bredere nettverk av venner og bekjente, sier Christina. </p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <h3>Kandidatnummer: </h3>
+            <p>479</p>
+            <p>400</p>
+            <p></p>
         </div>
-        <div id="comparisonchart" class="scrollText">
-            <h3>Hvilket råd ville du ha gitt til utvekslingsstudenter?</h3>
-            <p>-	Mitt råd er å være varsom på hvilken bosituasjon du velger, og ta med deg norsk mat og godteri du liker. Og ikke minst prøve å sosialisere dere med ikke-norske folk slik at du blir bedre i engelsk og får et bredere nettverk av venner og bekjente, sier Christina. </p>
-        </div>
-    </section>
+    </footer>
+    
 
     <script>
-        const comparison = document.getElementById("comparison")
-        //Dataset
-        const data = [
-        {
-            Partyname: "Arbeiderpartiet",
-            Abbreviation: "AP",
-            Votes2019: "2603",
-            Votes2023: "2982"
-        },
-        {
-            Partyname: "Fremskrittspartiet",
-            Abbreviation: "FrP",
-            Votes2019: "1034",
-            Votes2023: "1030"
-        },
-        {
-            Partyname: "Høyre",
-            Abbreviation: "H",
-            Votes2019: "4141",
-            Votes2023: "3997"
-        },
-        {
-            Partyname: "Kristelig Folkeparti",
-            Abbreviation: "KrF",
-            Votes2019: "478",
-            Votes2023: "510"
-        },
-        {
-            Partyname: "Miljøpartiet de Grønne",
-            Abbreviation: "MdG",
-            Votes2019: "1058",
-            Votes2023: "530"
-        },
-        {
-            Partyname: "Rødt",
-            Abbreviation: "R",
-            Votes2019: "1044",
-            Votes2023: "802"
-        },
-        {
-            Partyname: "Senterpartiet",
-            Abbreviation: "Sp",
-            Votes2019: "2037",
-            Votes2023: "798"
-        },
-        {
-            Partyname: "Sosialistisk Venstreparti",
-            Abbreviation: "SV",
-            Votes2019: "744",
-            Votes2023: "672"
-        },
-        {
-            Partyname: "Venstre",
-            Abbreviation: "V",
-            Votes2019: "393",
-            Votes2023: "190"
-        },
-        {
-            Partyname: "Pensjonistpartiet",
-            Abbreviation: "Pp",
-            Votes2019: "1206",
-            Votes2023: "1438"
-        },
-        {
-            Partyname: "Industri og Næringspartiet",
-            Abbreviation: "INP",
-            Votes2019: "0",
-            Votes2023: "1290"
-        },
-        {
-            Partyname: "Liberalistene",
-            Abbreviation: "Lib",
-            Votes2019: "0",
-            Votes2023: "51"
-        },
-        {
-            Partyname: "Norgesdemokratene",
-            Abbreviation: "ND",
-            Votes2019: "0",
-            Votes2023: "201"
-        }
+         //CENTER (HiØ)
+        const centerLat = 59.1271
+        const centerLong = 11.4045
+        
+        //DATA: ARRAY OF PLACES
+        const places = [
+            {name: "Høgskolen i Østfold", lat: 59.1294, long: 11.3537},
+            {name: "Oslo Lufthavn Gardermoen", lat: 60.183710, long: 11.096380},
+            {name: "Edinburgh Airport", lat: 55.952129, long: -3.349550},
+            {name: "The University of Edinburgh", lat: 55.9429, long: -3.1853929},
         ]
 
-        //Create arrays with the necessary data, to make it available for JavaScript
-        const labelData = []
-        data.map((item) => labelData.push(item.Abbreviation))
-        const votes2019 = []
-        data.map((item) => votes2019.push(item.Votes2019))
-        const votes2023 = []
-        data.map((item) => votes2023.push(item.Votes2023))
-
-        //Initialize the graph using Chart.js
-        new Chart(comparison, {
-            type: "bar",
-            data: {
-                labels: labelData, //data array made from the data set
-                datasets: [
-                    {
-                        label: "Votes 2019",
-                        data: votes2019 //data array made from the data set
-                    },
-                    {
-                        label: "Votes 2023",
-                        data: votes2023 //data array made from the data set
-                    }
-                ]
-            },
-            options: {
-                scales: {
-                    y: { beginAtZero: true }
-                }
-            }
+        //INITIATE MAP
+        let map = L.map('map', {
+            center: [centerLat, centerLong],
+            zoom: 12
         })
 
-        //Function to check if element is in viewport
-        function isInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                //Improved check of viewport for elements exceeding viewport height
-                (rect.top <= 0 && rect.bottom >= 0) || 
-                (rect.top >= 0 && rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
-            );
-        }
-
-        //Make a check when page scrolls:
-        document.addEventListener('scroll', function () {
-            //If a specific id is in the viewport...
-            if(isInViewport(document.getElementById("decline"))) {
-                //...change the parent elements background image
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1606955317161-cb7d261c039a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
-            }
-            if(isInViewport(document.getElementById("increase"))) {
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1465343161283-c1959138ddaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
-            }
-            if(isInViewport(document.getElementById("comparisonchart"))) {
-                document.getElementById("changingBg").style.backgroundImage = "url(https://images.unsplash.com/photo-1516706332927-bb3a20d62514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"
-            }
-
-        }, {
-            passive: true
-        });
+        //SET MAP CONSTRUCTOR
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        //SET MARKERS AND BUILD NAVIGATION
+        //create custom icon:
+        const customIcon = L.icon({
+            iconUrl: 'custommarker.png',
+            iconSize: [40,40],
+            iconAnchor: [20,20],
+            popupAnchor: [0, -20]
+        })
+        //prepare navigation html
+        let navHTML = ""
+        //Loop places
+        places.map((place) => {
+            //place markers
+            L.marker([place.lat, place.long], {icon: customIcon}).addTo(map).bindPopup(place.name)
+            //build navigation
+            navHTML += `<article><h3>${place.name}</h3><button onclick="map.flyTo([${place.lat},${place.long}],18)">Vis på kart</button></article>`
+        })
+        //Add HTML to nav
+        document.getElementById("businesses").innerHTML = navHTML
     </script>
 </body>
 </html>

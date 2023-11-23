@@ -1,13 +1,8 @@
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -16,7 +11,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1552664688-cf412ec27db2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: top left;
 }
@@ -27,12 +22,19 @@ h1 {
     text-shadow: 2px 2px 2px #000;
 }
 
+h2 {
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
 header p {
     background: #000;
     color: #fff;
     font-size: 1.5rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .scrollContainer {
@@ -46,67 +48,75 @@ header p {
     margin: 50vh auto;
     max-width: 50rem;
     padding: 1rem;
-    background: rgba(32, 32, 32, 0.8);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    line-height: 1.8;
 }
-#changingBg {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-bottom: 50vh;
-}
-#introduction {
-    background-image: url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
- /*Sett textSection og imgSection side om side*/
 
+#introduction {
+    background-image: url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#changingSecondBackground {
+    background-image: url("https://images.unsplash.com/photo-1506377585622-bedcbb027afc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#changingThirdBackground {
+    background-image: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .textSection {
     max-width: 50rem;
     margin: 0 auto;
+    display: block;
+    clear: both;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
-img {
-    max-width: 150%;
-    max-height:150%;
-  }
+.textSection img {
+    padding-top: 5%;
+    max-width: 70vh; 
+    float: left;
 
+}
+
+.textSection p {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    line-height: 1.8;
+}
 .alignRight {
     float: right;
     margin: 0 0 1rem 1rem;
 }
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    padding-top: 50px;
-    box-sizing: border-box;
-}
-.redBg {
-    background: #b61010;
-    color: #fff;
-}
-.greenBg {
-    background: #588002;
-    color: #fff;
-}
-.big {
-    text-align: center;
-    font-size: 4rem;
-    display: block;
-    clear: both;
-}
+
 .small {
     text-align: center;
     font-size: 2rem;
     margin: 0 auto;
     display: block;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
