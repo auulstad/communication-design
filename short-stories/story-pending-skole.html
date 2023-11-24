@@ -17,36 +17,38 @@
     </header>
     <main>
         <section class="textSection3">
-                <div id="content-wrapper2">
-                    <div id="content2">
-                            <p>Mange studenter pleier å pendle ved å ta buss eller tog til og fra skolen. Det med å ta buss til skolen kan være ganske utfordrende til studenter som bor langt fra skolen. Kopila er en av de studentene som pendler fra Fredrikstad til Halden.  </p>
-                            <p>Kopila Chauhan er en tredjeårsstudent i bachelorstudiet internasjonal kommunikasjon i Høgskolen i Østfold avd. Halden. Hun tar buss til og fra skolen to dager i uken. </p></div>
-                    <div id="fixedKopila">
-                        
-                        <figure>
-                            <img src="kopila.jpg" alt="Kopila Chauhan">
-                            <figcaption>STUDENT: Kopila Chauhan (fra venstre) er en av de studentene som tar buss til og fra skolen. Her med hennes tre klassekamerater. Foto: Privat. </figcaption>
-                        </figure>
-                    </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <p id="introduction">Mange studenter pleier å pendle ved å ta buss eller tog til og fra skolen. Det med å ta buss til skolen kan være ganske utfordrende til studenter som bor langt fra skolen. Kopila er en av de studentene som pendler fra Fredrikstad til Halden.</p>
+                    <p>Kopila Chauhan er en tredjeårsstudent i bachelorstudiet internasjonal kommunikasjon ved Høgskolen i Østfold avd. Halden. Hun tar buss til og fra skolen to dager i uken.</p>
                 </div>
+                <div class="fixed-kopila">
+                    <figure>
+                        <img src="kopila.jpg" alt="Kopila Chauhan">
+                        <figcaption>STUDENT: Kopila Chauhan (fra venstre) er en av de studentene som tar buss til og fra skolen. Her med hennes tre klassekamerater. Foto: Privat.</figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
-
-        <div class="fadein">
-            <section class="textSection">    
-                <p>De nye tallene i tabellen fra nettsiden SSB (Statistisk sentralbyrå) viser at det sank 47 275 passasjerer som tok buss i alt fra 2019 til 2022. Mens i 2019 var det 434 226 busspassasjerer og gikk ned til 386 951 totalt i 2022.  </p>
-            </section>
-        </div>
-        <canvas id="passasjerer" width="300" height="150"></canvas>
-        <div class="fadein">
-            <section class="textSection4">    
-                <h2>-	Mye venting</h2>
-            </section>
-        </div>
+        <h3 id="h3-sentrert">Antall kollektivreisende i 2019 og 2022</h3>
+        <canvas id="passasjerer" width="150" height="75"></canvas>
+        <section id="kollektivreisende" class="scrollContainer">
+            <div class="scrollText">
+                <aside class="alignRight">
+                    <div class="circle redBg">
+                        <span class="big">- 47 275</span>
+                        <span class="small">Passasjerer</span>
+                    </div>
+                </aside>
+          
+                <p>De nye tallene i tabellen fra nettsiden SSB (Statistisk sentralbyrå) viser at det sank 47 275 passasjerer som tok buss i alt fra 2019 til 2022. I 2019 var det 434 226 busspassasjerer, hvor antallet gikk ned til 386 951 totalt i 2022. </p>
+            </div>
+        </section>
         <section class="textSection2">
             <div class="scrollText2">
                 <div id="content-wrapper">
                     <div id="content">
-                        <div class="scrollText"><p>Hun mener at det som er bra med å ta buss til skolen er at det er billigere. Mens på den motsatte siden er at det er mye venting og at man må dra tidlig for å rekke bussen.  </p></div>
+                        <div class="scrollText"><h3>-	Mye venting</h3><p>Hun mener at det som er bra med å ta buss til skolen er at det er billigere. Mens på den motsatte siden er at det er mye venting og at man må dra tidlig for å rekke bussen.  </p></div>
                         <div class="scrollText">
                             <p class="cursiveText">Hvilke utfordringer møter du på angående transport?</p>
                             <p> -	Utfordringer som jeg møter på, er at bussen kan være forsinket noen ganger slik at jeg blir sent til timen, nevner hun. </p>
@@ -80,30 +82,7 @@
     </footer>
     <script>
 
-        document.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
-
-        if (scrollPosition  >= 1000 && scrollPosition <= 1350) {
-            console.log('Scroll position within range');
-            document.querySelector('.textSection').classList.add('show');
-        } else {
-            document.querySelector('.textSection').classList.remove('show');
-        }
-        });
-
-        document.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
-
-        if (scrollPosition  >= 1650 && scrollPosition <= 1950) {
-            console.log('Scroll position within range');
-            document.querySelector('.textSection4').classList.add('show');
-        } else {
-            document.querySelector('.textSection4').classList.remove('show');
-        }
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener('DOMContentLoaded', function () {
     
     var data = {
         labels: ['2019','2022'],
