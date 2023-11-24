@@ -19,6 +19,7 @@ header {
     background-position: top left;
 }
 
+
 h1 {
     font-size: 3rem;
     color: #fff;
@@ -47,51 +48,16 @@ header p {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
 }
-#changingBg {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#introduction {
-    background-image: url("https://images.unsplash.com/photo-1494172961521-33799ddd43a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
-.fadein {
-    display:flex;
-    align-items: center;
+#kollektivreisende {
+    background-image: url("https://images.pexels.com/photos/946281/pexels-photo-946281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     justify-content: center;
-}
-
-.textSection {
-    background: rgba(0, 0, 0, 0.8); 
-    color: #fff; 
-    padding: 20px; 
-    display: none;
-    width: 50%;
-    opacity: 0;
-    transition: opacity 1s ease; 
-}
-
-.textSection.show {
-    display: block;/* Vis den når den har klassen 'show' */
-    opacity: 1;
-}
-
-.textSection4 {
-    background: rgba(0, 0, 0, 0.8); 
-    color: #fff; 
-    padding: 20px; 
-    display: none;
-    width: 50%;
-}
-
-.textSection4.show {
-    display: block;/* Vis den når den har klassen 'show' */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .textSection2 {
@@ -138,38 +104,79 @@ header p {
     align-items: stretch; 
 }
 
-
-#content-wrapper2 {
+.content-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 1rem; 
 }
 
-#content2 {
-    margin: 0 auto;
+.content {
+    margin: 10px auto;
+    padding: 20px; 
     width: 60%;
-    line-height: 1.8;
+    line-height: 2.5;
+    justify-content: center; 
+    align-items: center;
 }
 
-#fixedKopila {
+#introduction {
+    font-style: italic;
+    font-style: bold;
+}
+
+#h3-sentrert {
+    text-align: center;
+}
+
+.fixed-kopila {
     width: 35%;
     position: sticky;
 }
 
-#fixedKopila img {
+.fixed-kopila img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-#fixedKopila figure {
+.fixed-kopila figure {
     text-align: center;
 }
 
-#fixedKopila figcaption {
+.fixed-kopila figcaption {
     margin-top: 10px;
     font-style: italic;
     font-size: 0.8rem;
+}
+
+.alignRight {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.redBg {
+    background: #b61010;
+    color: #fff;
+}
+
+.big {
+    text-align: center;
+    font-size: 2.5rem;
+    display: block;
+    clear: both;
+}
+.small {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    display: block;
 }
 
 footer {
