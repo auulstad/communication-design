@@ -2,13 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1555848962-6e79363ec58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1433&q=80");
+    background-image: url("https://images.unsplash.com/photo-1583841827606-24d1dda3c6ef?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: top left;
 }
@@ -17,14 +23,14 @@ h1 {
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    text-decoration: underline;
 }
 
-header a {
-    background: #000;
+header p {
+    font-size: 2rem;
     color: #fff;
-    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000;
     text-align: center;
-    padding: 1rem;
 }
 
 .scrollContainer {
@@ -46,7 +52,6 @@ header a {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 50vh;
 }
 #introduction {
     background-image: url("https://images.unsplash.com/photo-1494172961521-33799ddd43a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80");
@@ -56,40 +61,122 @@ header a {
     background-position: center center;
 }
 
+.fadein {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .textSection {
-    max-width: 50rem;
+    background: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 20px; 
+    display: none;
+    width: 50%;
+    opacity: 0;
+    transition: opacity 1s ease; 
+}
+
+.textSection.show {
+    display: block;/* Vis den når den har klassen 'show' */
+    opacity: 1;
+}
+
+.textSection4 {
+    background: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 20px; 
+    display: none;
+    width: 50%;
+}
+
+.textSection4.show {
+    display: block;/* Vis den når den har klassen 'show' */
+}
+
+.textSection2 {
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+}
+
+.scrollText2 { 
+    color: #000;
+}
+
+#content-wrapper {
+    display: flex;
+}
+
+#content {
+    flex-grow: 1;
+    width: 50%;
+    padding: 1rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+
+#fixedBusStop {
+    height: 100vh;
+    width: 50%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-image: url("https://images.pexels.com/photos/3071474/pexels-photo-3071474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cursiveText {
+    font-style: italic;
+}
+
+.textSection3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch; 
+}
+
+
+#content-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content2 {
     margin: 0 auto;
+    width: 60%;
+    line-height: 1.8;
+}
+
+#fixedKopila {
+    width: 35%;
+    position: sticky;
+}
+
+#fixedKopila img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    clear: both;
-}
-.alignRight {
-    float: right;
-    margin: 0 0 1rem 1rem;
-}
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    padding-top: 50px;
-    box-sizing: border-box;
-}
-.redBg {
-    background: #b61010;
-    color: #fff;
-}
-.greenBg {
-    background: #588002;
-    color: #fff;
-}
-.big {
-    text-align: center;
-    font-size: 4rem;
-    display: block;
-    clear: both;
-}
-.small {
-    text-align: center;
-    font-size: 2rem;
     margin: 0 auto;
-    display: block;
 }
+
+#fixedKopila figure {
+    text-align: center;
+}
+
+#fixedKopila figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
