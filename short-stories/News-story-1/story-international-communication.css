@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: top left;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+.scrollContainer {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 2s;
+}
+
+.scrollText {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+#introduction {
+    background-image: url("https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#introduction p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 900; 
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.textSection {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+#vizSection {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+#vizSection img {
+    max-width: 70%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+
+  #secondScroll {
+    background-image: url("https://images.pexels.com/photos/5624978/pexels-photo-5624978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.questions {
+    font-size: 18px;
+    font-style: italic;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
