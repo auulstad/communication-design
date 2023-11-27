@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: top left;
+}
+
+header p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 900; 
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+.scrollContainer {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 2s;
+}
+
+.scrollText {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255);
+    color: #000;
+    line-height: 1.5;
+}
+
+.scrollText2 {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.scrollText2 h3 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+#introduction {
+    background-image: url("https://images.pexels.com/photos/4347563/pexels-photo-4347563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#introduction h3 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.textSection {
+    margin: 0 auto;
+    display: display;
+    clear: both;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+#travel{
+    background-image: url("reise.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+.scrollText3 {
+    margin: 40vh auto;
+    max-width: 50rem;
+    padding: 2rem;
+    line-height: 1.5;
+    background: rgb(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+#secondScroll {
+    background-image: url("https://images.pexels.com/photos/5683079/pexels-photo-5683079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cursiveText {
+    font-style: italic;
+}
+
+#secondPart {
+    max-width: 50rem;
+    padding: 1rem;
+}
+
+#thirdScroll {
+    background-image: url("https://images.pexels.com/photos/259583/pexels-photo-259583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255);
+    color: #000;
+    line-height: 1.5;
+
+}
+
+.scrollTextButtom {
+    max-width: 50%;
+    margin-right: 20px; /* Legg til litt mellomrom mellom teksten og bildet */
+}
+
+.fixed-Kanze figure {
+    text-align:center;
+    margin: 0; /* Nullstill marginen for figuren */
+}
+
+.fixed-Kanze img {
+    max-width: 100%; /* Bildet tar maksimal bredde av foreldrelementet */
+}
+
+.fixed-Kanze figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
